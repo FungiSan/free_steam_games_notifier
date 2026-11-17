@@ -1,6 +1,6 @@
 services:
   bot:
-    image: ghcr.io/su-pr007/freesteamgamesparser-go:latest
+    image: $(BOT_IMAGE)
     build:
       context: ./
       dockerfile: ./cmd/bot/Dockerfile
