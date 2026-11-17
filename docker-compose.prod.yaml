@@ -1,7 +1,9 @@
 services:
   bot:
-    image: $(BOT_IMAGE)
+    image: ${BOT_IMAGE}
     restart: on-failure
+    volumes:
+      - ./.env:/app/.env
     depends_on:
       - pg
 

@@ -1,6 +1,6 @@
 services:
   bot:
-    image: $(BOT_IMAGE)
+    image: ${BOT_IMAGE}
     build:
       context: ./
       dockerfile: ./cmd/bot/Dockerfile
